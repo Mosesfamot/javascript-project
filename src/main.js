@@ -65,7 +65,8 @@ let generateShop = () => {
 
 generateShop();
 
-let increament = (id) => {
+
+let increment = (id) => {
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
 
@@ -78,23 +79,23 @@ let increament = (id) => {
         search.item += 1;
     }
 
-    console.log(basket);
+    // console.log(basket);
+    update(selectedItem.id);
 };
 
-let decreament = () => {
+let decrement = (id) => {
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
 
-    if (search === undefined) {
-        basket.push({
-            id: selectedItem.id,
-            item: 1,
-        });
-    } else {
+    if (search.item === 0) return;
+    else {
         search.item -= 1;
     }
 
-    console.log(basket);
+    // console.log(basket);
 };
 
-let update = () => {};
+let update = () => {
+    let search = basket.find((x) => x.id === id);
+    document.getElementById(id).innerHTML = search.item;
+};
