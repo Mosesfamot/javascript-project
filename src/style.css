@@ -81,4 +81,11 @@ body {
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}
+
   /* MAIN PAGE SECTION STYLING */
