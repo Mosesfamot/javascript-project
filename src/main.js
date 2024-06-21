@@ -1,43 +1,45 @@
 let shop = document.getElementById("shop");
 
 let shopItemsData = [
-    {
-        id: "gifgif##",
-        name: "Casual Shirt",
-        price: 45,
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
-        img: "images/img-1.jpg"      
-    }, 
-    {
-        id: "derder##",
-        name: "Office Shirt",
-        price: 100,
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
-        img: "images/img-2.jpg"    
-    }, 
-    {
-        id: "sweswe##",
-        name: "T Shirt",
-        price: 25,
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
-        img: "images/img-3.jpg"
-    }, 
-    {
-        id: "aweawe##",
-        name: "Mens Suit",
-        price: 300,
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
-        img: "images/img-4.jpg"
-    }];
+  {
+    id: "gifgif##",
+    name: "Casual Shirt",
+    price: 45,
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    img: "images/img-1.jpg",
+  },
+  {
+    id: "derder##",
+    name: "Office Shirt",
+    price: 100,
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    img: "images/img-2.jpg",
+  },
+  {
+    id: "sweswe##",
+    name: "T Shirt",
+    price: 25,
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    img: "images/img-3.jpg",
+  },
+  {
+    id: "aweawe##",
+    name: "Mens Suit",
+    price: 300,
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    img: "images/img-4.jpg",
+  },
+];
 
-// Regular function vs ES6 arrow function 
-// function abcd () {} - Regular function 
+// Regular function vs ES6 arrow function
+// function abcd () {} - Regular function
 // function abdc = () => {} - ES6 arrow function
-// The ES6 arrow function is more advanced than the regular function  
+// The ES6 arrow function is more advanced than the regular function
 
 let generateShop = () => {
-    return (shop.innerHTML = shopItemsData.map((x) => {
-        return `
+  return (shop.innerHTML = shopItemsData
+    .map((x) => {
+      return `
             <div class="item">
                 <img width="220" src="images/img-1.jpg" alt="">
                 <div class="details">
@@ -53,8 +55,9 @@ let generateShop = () => {
                     </div>
                 </div>
             </div>
-            `
-    }));
+            `;
+    })
+    .join(""));
 };
 
 generateShop();
