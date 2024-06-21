@@ -36,6 +36,8 @@ let shopItemsData = [
 // function abdc = () => {} - ES6 arrow function
 // The ES6 arrow function is more advanced than the regular function
 
+let basket = [];
+
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
     .map((x) => {
@@ -49,9 +51,9 @@ let generateShop = () => {
                     <div class="price-quantity">
                         <h2>$ ${price}</h2>
                         <div class="buttons">
-                            <i onclick="decreament()" class="bi bi-dash-lg"></i>
+                            <i onclick="decreament(${id})" class="bi bi-dash-lg"></i>
                             <div onclick="update()" id="${id}" class="quantity">0</div>
-                            <i onclick="increament()" class="bi bi-plus-lg"></i>
+                            <i onclick="increament(${id})" class="bi bi-plus-lg"></i>
                         </div>
                     </div>
                 </div>
@@ -63,8 +65,36 @@ let generateShop = () => {
 
 generateShop();
 
-let increament = () => {};
+let increament = (id) => {
+    let selectedItem = id;
+    let search = basket.find((x) => x.id === selectedItem.id);
 
-let decreament = () => {};
+    if (search === undefined) {
+        basket.push({
+            id: selectedItem.id,
+            item: 1,
+        });
+    } else {
+        search.item += 1;
+    }
+
+    console.log(basket);
+};
+
+let decreament = () => {
+    let selectedItem = id;
+    let search = basket.find((x) => x.id === selectedItem.id);
+
+    if (search === undefined) {
+        basket.push({
+            id: selectedItem.id,
+            item: 1,
+        });
+    } else {
+        search.item -= 1;
+    }
+
+    console.log(basket);
+};
 
 let update = () => {};
