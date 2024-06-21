@@ -1,0 +1,28 @@
+/* GENERAL STYLING SECTION */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+
+  /* GENERAL STYLING SECTION */
+
+
+  /* NAVBAR STYLING SECTION  */
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+  }
+
+  /* NAVBAR STYLING SECTION  */
