@@ -1,5 +1,35 @@
 let shop = document.getElementById("shop");
 
+let shopItemsData = [
+    {
+        id: "gifgif##",
+        name: "Casual Shirt",
+        price: 45,
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+        img: "images/img-1.jpg"      
+    }, 
+    {
+        id: "derder##",
+        name: "Casual Shirt",
+        price: 45,
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+        img: "images/img-1.jpg"    
+    }, 
+    {
+        id: "sweswe##",
+        name: "Casual Shirt",
+        price: 45,
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+        img: "images/img-1.jpg"
+    }, 
+    {
+        id: "aweawe##",
+        name: "Casual Shirt",
+        price: 45,
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+        img: "images/img-1.jpg"
+    }];
+
 // Regular function vs ES6 arrow function 
 // function abcd () {} - Regular function 
 // function abdc = () => {} - ES6 arrow function
