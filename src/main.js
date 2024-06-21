@@ -43,10 +43,10 @@ let generateShop = () => {
             <div class="item">
                 <img width="220" src="images/img-1.jpg" alt="">
                 <div class="details">
-                    <h3>Casual Shirt</h3>
+                    <h3>${x.name}</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                     <div class="price-quantity">
-                        <h2>$ 45</h2>
+                        <h2>$ ${x.price}</h2>
                         <div class="buttons">
                             <i class="bi bi-dash-lg"></i>
                             <div class="quantity">0</div>
