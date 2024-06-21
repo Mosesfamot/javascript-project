@@ -25,6 +25,11 @@
     margin-bottom: 30px;
   }
 
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .cart {
     position: relative;
     background-color: #fff;
