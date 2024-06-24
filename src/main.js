@@ -96,10 +96,12 @@ let decrement = (id) => {
     else {
         search.item -= 1;
     }
-    localStorage.setItem("data", JSON.stringify(basket));
+    
     basket = basket.filter((x) => x.item !== 0);
     // console.log(basket);
     update(selectedItem.id);
+
+    localStorage.setItem("data", JSON.stringify(basket));
 };
 
 let update = (id) => {
