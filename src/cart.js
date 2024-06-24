@@ -14,7 +14,13 @@ let generateCartItems = () => {
     if(basket.length !== 0) {
 
     }
-    else if {
-        
+    else {
+        shoppingCart.innerHTML = '';
+        label.innerHTML = '
+        <h2>Cart is Empty</h2>
+        <a href="index.html">
+            <button class="HomeBtn">Back to home</button>
+        </a>
+        ';
     }
 }
