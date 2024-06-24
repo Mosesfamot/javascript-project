@@ -98,10 +98,9 @@ let decrement = (id) => {
     else {
         search.item -= 1;
     }
-    
+    update(selectedItem.id);
     basket = basket.filter((x) => x.item !== 0);
     // console.log(basket);
-    update(selectedItem.id);
 
     localStorage.setItem("data", JSON.stringify(basket));
 };
