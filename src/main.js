@@ -2,34 +2,35 @@ let shop = document.getElementById("shop");
 
 let shopItemsData = [
   {
-    id: "gifgif##",
+    id: "jfhgbvnscs",
     name: "Casual Shirt",
     price: 45,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     img: "images/img-1.jpg",
   },
   {
-    id: "derder##",
+    id: "ioytrhndcv",
     name: "Office Shirt",
     price: 100,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     img: "images/img-2.jpg",
   },
   {
-    id: "sweswe##",
+    id: "wuefbncxbsn",
     name: "T Shirt",
     price: 25,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     img: "images/img-3.jpg",
   },
   {
-    id: "aweawe##",
+    id: "thyfhcbcv",
     name: "Mens Suit",
     price: 300,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     img: "images/img-4.jpg",
   },
 ];
+
 
 // Regular function vs ES6 arrow function
 // function abcd () {} - Regular function
@@ -81,26 +82,23 @@ let increment = (id) => {
     } else {
         search.item += 1;
     }
-
+    localStorage.setItem("data", JSON.stringify(basket));
     // console.log(basket);
     update(selectedItem.id);
-    localStorage.setItem("data", JSON.stringify(basket));
 };
 
 let decrement = (id) => {
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
 
-    if (search === undefined) return;
-    else if (search.item === 0) return;
+    if (search.item === 0) return;
     else {
         search.item -= 1;
     }
-
+    localStorage.setItem("data", JSON.stringify(basket));
     // console.log(basket);
     update(selectedItem.id);
     basket = basket.filter((x) => x.item !== 0);
-    localStorage.setItem("data", JSON.stringify(basket));
 };
 
 let update = (id) => {
