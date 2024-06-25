@@ -24,6 +24,7 @@ let generateCartItems = () => {
                 <div class="title-price-x">
                     <h4>
                         <p>${search.name}</p>
+                        <p>$ ${search.price}</p>
                     </h4>
                     <i class="bi bi-x-lg"></i>
                 </div>
