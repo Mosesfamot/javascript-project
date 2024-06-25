@@ -99,6 +99,16 @@ let removeItem = (id) => {
     let selectedItem = id;
     basket = basket.filter((x) => x.id !== selectedItem.id);
     generateCartItems();
-    
+
     localStorage.setItem("data", JSON.stringify(basket));
 };
+
+let totalAmount = () => {
+    if (basket.length !== 0) {
+        let amount = basket.map((x) => {
+            let { item, id } = x;
+            let search = shopItemsData.find((y) => y.id === id) || [];
+        });
+    }
+    else return
+}
