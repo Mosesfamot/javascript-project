@@ -136,6 +136,7 @@ i {
 .cart-item {
     border: 2px solid #212529;
     border-radius: 5px;
+    display: flex;
 }
 
 /* CART PAGE SECTION STYLING */
