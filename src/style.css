@@ -105,6 +105,15 @@ i {
     margin-bottom: 20px;
 }
 
+.HomeBtn {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
   /* MAIN PAGE SECTION STYLING */
 
   /* MEDIA QUERY SECTION MEDIA QUERY SECTION  */
