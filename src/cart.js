@@ -98,5 +98,7 @@ let update = (id) => {
 let removeItem = (id) => {
     let selectedItem = id;
     basket = basket.filter((x) => x.id !== selectedItem.id);
+    generateCartItems();
+    
     localStorage.setItem("data", JSON.stringify(basket));
 };
