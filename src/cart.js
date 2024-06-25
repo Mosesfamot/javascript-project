@@ -108,7 +108,10 @@ let totalAmount = () => {
         let amount = basket.map((x) => {
             let { item, id } = x;
             let search = shopItemsData.find((y) => y.id === id) || [];
-        });
+            return item * search.price;
+        }).reduce((x,y) => x + y, 0);
     }
-    else return
-}
+    else return;
+};
+
+totalAmount();
