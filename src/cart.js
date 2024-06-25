@@ -19,6 +19,11 @@ let generateCartItems = () => {
         return `
         <div class="cart-item">
             <img width="100" src=${search.img} alt="" />
+            <div class="details">
+                <div class="title-price-x"></div>
+                <div class="cart-buttons"></div>
+                <h3></h3>
+            </div>
         </div>
         `;
       }).join(""));
