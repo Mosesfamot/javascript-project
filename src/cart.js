@@ -13,6 +13,9 @@ calculation();
 let generateCartItems = () => {
     if (basket.length !== 0) {
       return (shoppingCart.innerHTML = basket.map((x) => {
+        console.log(x);
+        let { id, item } = x;
+        let search = shopItemsData.find((y) => y.id === id) || [];
         return `
         <div class="cart-item">
             <img
