@@ -110,6 +110,9 @@ let totalAmount = () => {
             let search = shopItemsData.find((y) => y.id === id) || [];
             return item * search.price;
         }).reduce((x,y) => x + y, 0);
+        label.innerHTML = `
+        <h2>Total Bill : $ ${amount}</h2>
+        `
     }
     else return;
 };
