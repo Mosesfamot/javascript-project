@@ -14,10 +14,10 @@ i {
     cursor: pointer;
 }
 
-  /* GENERAL STYLING SECTION */
+/* GENERAL STYLING SECTION */
 
 
-  /* NAVBAR STYLING SECTION  */
+/* NAVBAR STYLING SECTION  */
 
 .navbar {
     display: flex;
@@ -54,10 +54,11 @@ i {
     border-radius: 3px;
 }
 
-  /* NAVBAR STYLING SECTION  */
+
+/* NAVBAR STYLING SECTION  */
 
 
-  /* MAIN PAGE SECTION STYLING */
+/* MAIN PAGE SECTION STYLING */
 
 .shop {
     display: grid;
@@ -100,6 +101,11 @@ i {
     color: green;
 }
 
+/* MAIN PAGE SECTION STYLING */
+
+
+/* CART PAGE SECTION STYLING */
+
 .text-center {
     text-align: center;
     margin-bottom: 20px;
@@ -115,9 +121,15 @@ i {
     margin-top: 10px;
 }
 
-  /* MAIN PAGE SECTION STYLING */
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
 
-  /* MEDIA QUERY SECTION MEDIA QUERY SECTION  */
+/* CART PAGE SECTION STYLING */
+
+
+/* MEDIA QUERY SECTION MEDIA QUERY SECTION  */
 
 @media (max-width: 1000px) {
     .shop {
@@ -131,4 +143,4 @@ i {
     }
 }
 
-  /* MEDIA QUERY SECTION MEDIA QUERY SECTION  */
+/* MEDIA QUERY SECTION MEDIA QUERY SECTION  */
