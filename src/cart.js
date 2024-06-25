@@ -15,7 +15,7 @@ let generateCartItems = () => {
       return (shoppingCart.innerHTML = basket.map((x) => {
         let { id, item } = x;
         let search = shopItemsData.find((y) => y.id === id) || [];
-        let { img, name, price } = search;
+        let { img, name, price } = search; //This i called distructuring an object 
         return `
         <div class="cart-item">
             <img width="100" src=${img} alt="" />
