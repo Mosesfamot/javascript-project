@@ -11,7 +11,7 @@ let calculation = () => {
 calculation();
 
 let generateCartItems = () => {
-    if(basket.length !== 0) {
+    if (basket.length !== 0) {
     } else {
         shoppingCart.innerHTML = ``;
         label.innerHTML = `

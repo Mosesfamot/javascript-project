@@ -96,8 +96,13 @@ i {
     color: red;
 }
   
-  .bi-plus-lg {
+.bi-plus-lg {
     color: green;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
   /* MAIN PAGE SECTION STYLING */
