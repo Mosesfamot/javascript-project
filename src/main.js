@@ -87,6 +87,8 @@ let update = (id) => {
     document.getElementById(id).innerHTML = search.item;
     calculation();
 };
+//Update the content on the page across necesarry sections
+
 
 let calculation = () => {
     let cartIcon = document.getElementById("cartAmount");
