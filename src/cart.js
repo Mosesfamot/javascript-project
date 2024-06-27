@@ -53,6 +53,7 @@ let generateCartItems = () => {
 };
 
 generateCartItems();
+//Code that generate Items added to the cart section
 
 
 let increment = (id) => {
