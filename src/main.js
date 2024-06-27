@@ -77,6 +77,8 @@ let decrement = (id) => {
 
     localStorage.setItem("data", JSON.stringify(basket));
 };
+//Decreament Of Number or Data Section
+
 
 let update = (id) => {
     let search = basket.find((x) => x.id === id);
