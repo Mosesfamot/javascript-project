@@ -10,6 +10,7 @@ let calculation = () => {
   
 calculation();
 
+//Code that generate Items added to the cart section
 let generateCartItems = () => {
     if (basket.length !== 0) {
       return (shoppingCart.innerHTML = basket.map((x) => {
