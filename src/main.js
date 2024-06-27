@@ -90,6 +90,7 @@ let update = (id) => {
 //Update the content on the page across necesarry sections
 
 
+//Does necesarry calculation in the cart section
 let calculation = () => {
     let cartIcon = document.getElementById("cartAmount");
     cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
