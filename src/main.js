@@ -61,7 +61,7 @@ let increment = (id) => {
 //Increament Of Number or Data Section
 
 
-//Increament Of Number or Data Section
+//Decreament Of Number or Data Section
 let decrement = (id) => {
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
