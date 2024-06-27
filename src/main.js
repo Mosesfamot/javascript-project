@@ -97,3 +97,4 @@ let calculation = () => {
 };
   
 calculation();
+//Does necesarry calculation in the cart section
