@@ -80,6 +80,7 @@ let decrement = (id) => {
 //Decreament Of Number or Data Section
 
 
+//Update the content on the page across necesarry sections
 let update = (id) => {
     let search = basket.find((x) => x.id === id);
     // console.log(search.item);
