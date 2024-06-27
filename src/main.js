@@ -39,6 +39,7 @@ let generateShop = () => {
 generateShop();
 
 
+//Increament Of Number or Data Section
 let increment = (id) => {
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
