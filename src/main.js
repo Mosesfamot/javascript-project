@@ -58,7 +58,10 @@ let increment = (id) => {
 
     localStorage.setItem("data", JSON.stringify(basket));
 };
+//Increament Of Number or Data Section
 
+
+//Increament Of Number or Data Section
 let decrement = (id) => {
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
