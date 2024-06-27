@@ -1,3 +1,5 @@
+//This can be regarded as the data center for the App
+
 let shopItemsData = [
     {
       id: "fffp1",
